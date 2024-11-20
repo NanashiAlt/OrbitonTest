@@ -11,8 +11,8 @@ export const IndexPage: FC = () => {
     <Page back={false}>
       <List>
         <Section
-          header="Features"
-          footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
+          header="Orbiton Shooting Game"
+          footer="Connect Your Wallet"
         >
           <Link to="/ton-connect">
             <Cell
@@ -24,18 +24,28 @@ export const IndexPage: FC = () => {
           </Link>
         </Section>
         <Section
-          header="Application Launch Data"
-          footer="These pages help developer to learn more about current launch information"
+          header="Orbiton Menu"
+          footer="This is a space shooter game aimed to give you a Nice experience"
         >
-          <Link to="/init-data">
-            <Cell subtitle="User data, chat information, technical data">Init Data</Cell>
+          <Link to="/campaign">
+            <Cell subtitle="Play Story Mode">Campaign</Cell>
           </Link>
-          <Link to="/launch-params">
-            <Cell subtitle="Platform identifier, Mini Apps version, etc.">Launch Parameters</Cell>
+          <Link to="/endless">
+            <Cell subtitle="Play Endless mode.">Non-stop Survival</Cell>
           </Link>
-          <Link to="/theme-params">
-            <Cell subtitle="Telegram application palette information">Theme Parameters</Cell>
+          <Link to="/leaderboards">
+            <Cell subtitle="Check Leaderboards">Highscores</Cell>
           </Link>
+          <Link to="/Game">
+            <Cell subtitle="Play Game">Game</Cell>
+          </Link>
+
+          
+        </Section>
+        <Section
+        header = "HINDI KO NA KAYA"
+        footer = "Mga par wag na tayo mag pitch nakakahiya na"
+        >
         </Section>
       </List>
     </Page>

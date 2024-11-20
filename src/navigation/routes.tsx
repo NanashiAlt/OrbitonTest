@@ -5,6 +5,7 @@ import { InitDataPage } from '@/pages/InitDataPage.tsx';
 import { LaunchParamsPage } from '@/pages/LaunchParamsPage.tsx';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
 import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
+import {GamePage} from "@/pages/GamePage.tsx"
 
 interface Route {
   path: string;
@@ -15,9 +16,10 @@ interface Route {
 
 export const routes: Route[] = [
   { path: '/', Component: IndexPage },
-  { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
-  { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
-  { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },
+  { path: '/campaign', Component: InitDataPage, title: 'Campaign' },
+  { path: '/endless', Component: ThemeParamsPage, title: 'Non-stop Survival' },
+  { path: '/leaderboards', Component: LaunchParamsPage, title: 'Highscores' },
+  { path: '/Game', Component: GamePage, title:'Play Game'},
   {
     path: '/ton-connect',
     Component: TONConnectPage,
